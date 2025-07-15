@@ -4,91 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CapitalRP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background: url('https://peeltex.github.io/normascapitalrp/assets/comisaria_bg.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
+      color: #f4f4f4;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      min-height: 100vh;
     }
     header {
-      padding: 2rem;
       background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
+      padding: 1.5rem;
+      text-align: center;
     }
-    h1 {
+    header h1 {
       font-size: 3rem;
-      color: #3498db;
+      margin: 0;
+      color: #ffffff;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #cccccc;
     }
     .buttons {
-      margin: 2rem;
       display: flex;
-      gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 1rem;
+      margin: 2rem;
     }
-
-    /* Botón blanco */
-    a.btn-white {
-      background: #fff;
-      color: #000;
-    }
-    a.btn-white:hover {
-      background: #ddd;
-    }
-
-    /* Botón rojo */
-    a.btn-red {
-      background: #e74c3c;
-      color: #fff;
-    }
-    a.btn-red:hover {
-      background: #c0392b;
-    }
-
-    /* Botón azul */
-    a.btn-blue {
-      background: #3498db;
-      color: #fff;
-    }
-    a.btn-blue:hover {
-      background: #2980b9;
-    }
-
-    /* Botón verde Discord */
-    a.btn-discord {
-      background: #5865F2;
-      color: #fff;
-    }
-    a.btn-discord:hover {
-      background: #4752c4;
-    }
-
-    /* Base estilo */
     a.button {
       padding: 1rem 2rem;
-      text-decoration: none;
       border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #f4f4f4;
+      border: 2px solid #ccc;
       transition: background 0.3s;
     }
+    a.button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Estilos individuales */
+    .btn-white { border-color: #fff; color: #fff; }
+    .btn-red { border-color: #e74c3c; }
+    .btn-blue { border-color: #3498db; }
+    .btn-discord { border-color: #7289da; }
 
     section {
       max-width: 800px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.5);
       border-radius: 12px;
     }
     footer {
-      margin-top: auto;
-      padding: 1rem;
       background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
+      text-align: center;
+      padding: 1rem;
       font-size: 0.9rem;
     }
   </style>
@@ -98,22 +79,24 @@
     <h1>CapitalRP</h1>
     <p>Servidor de Roleplay Argentino en FiveM</p>
   </header>
+
   <div class="buttons">
     <a href="fivem://connect/capitalrp.net" class="button btn-white">Entrar al Servidor</a>
-    <a href="normativas-generales.html" class="button btn-red">Normativas Generales</a>
+    <a href="normas_generales_index.html" class="button btn-red">Normativas Generales</a>
     <a href="pfa_reworked.html" class="button btn-blue">Ver PFA</a>
     <a href="https://discord.gg/R7ku3P3TAv" target="_blank" class="button btn-discord">Unite a Discord</a>
   </div>
+
   <section>
     <h2>📜 Reglas Básicas</h2>
     <ul style="text-align: left;">
       <li>✅ Respetar el rol en todo momento</li>
-      <li>🚫 No hacer RDM/VDM</li>
       <li>🤝 Actuar siempre con coherencia IC</li>
-      <li>👮 Respetar a los miembros del staff</li>
-      <li>🧠 El uso de cheats implica baneo inmediato</li>
+      <li>🧏‍♂️ Respetar a los miembros del staff</li>
+      <li>❌ El uso de cheats implica baneo inmediato</li>
     </ul>
   </section>
+
   <footer>
     &copy; 2025 CapitalRP - Todos los derechos reservados.
   </footer>
